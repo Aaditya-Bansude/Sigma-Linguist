@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "147973440265",
+    "project_id": "sigma-linguist-chats",
+    "storage_bucket": "sigma-linguist-chats.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:147973440265:android:23be6e739d146d9b4509d8",
+        "android_client_info": {
+          "package_name": "com.example.sigma_linguist"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUhwSGK4ESyRVHPyv8BA4BX78vVJORI0Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
