@@ -80,7 +80,7 @@ class _ChatScreenState extends State<ChatScreen> {
         });
       } else if (response.statusCode == 503) {
         _addMessage(recentChat, 'sigma linguist', 'Taking Longer Than Usual Fetching Response...');
-        Future.delayed(const Duration(seconds: 100));
+        await Future.delayed(const Duration(seconds: 100));
         retry = true;
       } else {
         _addMessage(recentChat, 'sigma linguist', '${response.statusCode.toString()}: Error Fetching Response!');
