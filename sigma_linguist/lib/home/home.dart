@@ -26,7 +26,9 @@ class _HomePageState extends State<HomePage> {
             builder: (context, snapshot) {
               if(snapshot.hasData) {
                 List<QueryDocumentSnapshot> allChats = snapshot.data!.docs;
-                recentChat ?? context.read<ChatNotifier>().updateRecentChat(allChats.first);
+                if (allChats.isNotEmpty) {
+                  recentChat ?? context.read<ChatNotifier>().updateRecentChat(allChats.first);
+                }
                 return Scaffold(
                   appBar: AppBar(
                     iconTheme: const IconThemeData(color: Colors.deepPurple),
